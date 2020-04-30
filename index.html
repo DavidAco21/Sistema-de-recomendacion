@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cargar CSV</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+    <section class="principal">
+    <article>
+        <div class="Scontainer">
+            <div class="container">
+                <div class="title">Sistema de recomendación</div>
+                <p class="nombres">| David garcía y Juan losada</p>
+
+                <img src="" class="imgPrincipal" alt="" width="200px">
+    
+                <select id="persona">
+                </select>
+                <button id="btn_calcular"> Calcular similitud </button>
+    
+    
+                <br>
+                <div class="arriba">
+                    <p>Edad</p>
+                    <input class="edad" id="edad" type="range" min="0.001" max="1" step="0.001" value="0.5">
+                    <output id="outputEdad"></output>
+    
+                </div>
+    
+    
+                <div class="container">
+    
+                    <div class="arriba">
+                        <br>
+                        <p>Peso</p>
+                        <input id="peso" type="range" min="0.001" max="1" step="0.001" value="0.5">
+                        <output id="outputPeso"></output>
+                    </div>
+    
+                    <div class="arriba">
+                        <br>
+                        <p>Altura</p>
+                        <input id="altura" type="range" min="0.001" max="1" step="0.001" value="0.5">
+                        <output id="outputAltura"></output>
+                    </div>
+    
+                    <div class="arriba">
+                        <br>
+                        <p>Mascotas</p>
+                        <input id="mascotas" type="range" min="0.001" max="1" step="0.001" value="0.5">
+                        <output id="outputMascotas"></output>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+    <article>
+        <div class="vs">Similitud</div>
+        <div class="lista"></div>
+        <div class="estu">Estudiantes</div>
+
+    </article>
+
+    </section>
+
+    
+
+    
+
+
+    <script src="/librerias/jquery-3.4.1.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
